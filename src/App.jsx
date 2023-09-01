@@ -2,14 +2,14 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-// import transparentLogo from './assets/ReactRelay-logos/transparent-logo-only.png'
 import blackLogo from "./assets/ReactRelay-logos/black-logo-only.png"
 
 
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'Features', href: '#' },
+  { name: 'Get Started', href: '#' },
+  { name: 'Documentation', href: '#' },
   { name: 'About Us', href: '#' },
 ]
 
@@ -27,7 +27,7 @@ export default function Example() {
                 className="h-11 w-auto"
                 // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 src={blackLogo}
-                alt=""
+                alt="ReactRelay logo"
               />
             </a>
           </div>
@@ -118,7 +118,7 @@ export default function Example() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
+              See how you can contribute to our development.{' '}
               <a href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
@@ -130,7 +130,7 @@ export default function Example() {
               Introducing ReactRelay
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            Clarify your React app's structure. Navigate components, monitor AJAX endpoints, and data. Enhancing front-end and back-end collaboration
+            Clarify your React app's structure. Navigate components, monitor AJAX endpoints, and view data models. Pass the baton effortlessly with ReactRelay: Streamline your front-end to back-end collaboration.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
