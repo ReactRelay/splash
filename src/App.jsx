@@ -3,12 +3,12 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import blackLogo from "./assets/ReactRelay-logos/black-logo-only.png"
-
+import Team from './Team.jsx'
+import Content from './Content.jsx'
 
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'Get Started', href: '#' },
   { name: 'Documentation', href: '#' },
   { name: 'About Us', href: '#' },
 ]
@@ -158,6 +158,8 @@ export default function Example() {
           />
         </div>
       </div>
+      <Content />
+      <Team />
     </div>
   )
 }
