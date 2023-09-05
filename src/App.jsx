@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import blackLogo from "./assets/ReactRelay-logos/black-logo-only.png"
@@ -15,7 +15,12 @@ const navigation = [
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const targetRef = useRef(null);
+  const scrollToTarget = () => {
+    if (targetRef.current) {
+        targetRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -140,7 +145,7 @@ export default function Example() {
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a onClick={scrollToTarget} href="#" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -159,7 +164,9 @@ export default function Example() {
           />
         </div>
       </div>
-      <Content />
+      <div ref={targetRef}>
+        <Content />
+      </div>
       <Team />
     </div>
   )
