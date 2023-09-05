@@ -9,8 +9,8 @@ import Content from './Content.jsx'
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'Documentation', href: '#' },
-  { name: 'About Us', href: '#' },
+  // { name: 'Documentation', href: '#' },
+  { name: 'About Us', href: '#team' },
 ]
 
 export default function Example() {
@@ -167,7 +167,9 @@ export default function Example() {
       <div ref={targetRef}>
         <Content />
       </div>
-      <Team />
+      <div id="team">
+        <Team />
+      </div>
     </div>
   )
 }
