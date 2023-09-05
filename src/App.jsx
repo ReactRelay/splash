@@ -22,7 +22,7 @@ export default function Example() {
     }
   }
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -120,12 +120,12 @@ export default function Example() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 ">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               See how you can contribute to our development.{' '}
               <a href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
+                <span className="absolute inset-0" aria-hidden="true" onClick={() => window.open('https://github.com/oslabs-beta/ReactRelay', '_blank')}/>
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
