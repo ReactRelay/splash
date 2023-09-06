@@ -5,3 +5,20 @@
 #logo {
   filter: invert(66%) sepia(92%) saturate(701%) hue-rotate(168deg) brightness(84%) contrast(88%);
 }
+
+@layer utilities {
+
+  .download-button {
+    background-color: #4DA5CB;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    width: 200px;
+    color: white;
+  }
+
+  .download-button:hover {
+    scale: 105%;
+    background-color: #ecc94b;
+  }
+
+}
