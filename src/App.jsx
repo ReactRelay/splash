@@ -4,7 +4,9 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import blackLogo from "./assets/ReactRelay-logos/black-logo-only.png"
 import Team from './Team.jsx'
-import Content from './Content.jsx'
+import ComponentTree from './ComponentTree.jsx'
+import FetchRequest from './FetchRequest'
+import Download from './Download'
 
 
 const navigation = [
@@ -165,7 +167,11 @@ export default function Example() {
         </div>
       </div>
       <div ref={targetRef}>
-        <Content />
+        <ComponentTree />
+        <FetchRequest />
+      </div>
+      <div>
+        <Download />
       </div>
       <div id="team">
         <Team />
