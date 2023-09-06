@@ -19,7 +19,7 @@ export default {
 //     secondary: 'hover:bg-[#FFD059]',
 //     accent: '#FF7959',
 //     neutral: '#A6D9EF',
-//     'base-100': '#A6D9EF',
+//     'base-100': '#A6D9EF',`
 //     // 'tree-background': '#22303C',
 //     info: '#73BEDE',
 //     success: '#36d399',
