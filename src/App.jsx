@@ -6,6 +6,7 @@ import Team from './Team.jsx';
 import ComponentTree from './ComponentTree.jsx';
 import FetchRequest from './FetchRequest';
 import Download from './Download';
+import CodePreview from './CodePreview';
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -203,6 +204,7 @@ export default function Example() {
       <div ref={targetRef}>
         <ComponentTree />
         <FetchRequest />
+        <CodePreview />
       </div>
       <div>
         <Download />

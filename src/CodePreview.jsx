@@ -1,6 +1,6 @@
-import { ArrowUpOnSquareIcon, CursorArrowRaysIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
+import { ArrowUpOnSquareIcon, CursorArrowRaysIcon, ArrowsPointingOutIcon } from '@heroicons/react/20/solid'
 
-export default function ComponentTree() {
+export default function CodePreview() {
   return (
     <div className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div
@@ -20,7 +20,7 @@ export default function ComponentTree() {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">Visualize</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Component Tree</h1>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Code Preview</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
                 Upload your the folder that contains your component files and let React Relay create a visualization of your applications architecture
               </p>
@@ -51,17 +51,19 @@ export default function ComponentTree() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <MagnifyingGlassIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <ArrowsPointingOutIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Search for components.</strong>
-                    Pinpoint a particular component by using the search bar! 
+                    <strong className="font-semibold text-gray-900">Adjust the view.</strong>
                   </span>
                 </li>
               </ul>
 
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
               <p className="mt-6">
-                Just leave the server path empty when uploading your codebase and React Relay will still render your application architecture for you!
+                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
+                Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
+                tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
+                turpis ipsum eu a sed convallis diam.
               </p>
             </div>
           </div>

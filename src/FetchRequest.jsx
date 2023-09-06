@@ -1,15 +1,12 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { SunIcon, ListBulletIcon, ServerIcon } from '@heroicons/react/20/solid'
 
 export default function FetchRequest() {
   return (
     <div className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-      <div
-          // className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'
-          className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
+        <div
+          className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'
           aria-hidden='true'
         >
-
-
           <div
             className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#4DA5CB] to-[#A6D9EF] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'
             style={{
@@ -43,18 +40,15 @@ export default function FetchRequest() {
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <SunIcon className="mt-1 h-6 w-6 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                    blanditiis ratione.
+                    <strong className="font-semibold text-gray-900">Highlighted components.</strong> Components that contain any fetch requests will be highlighted in the component tree so you don&#39;t have to aimlessly search each component.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <ListBulletIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua
-                    ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                    <strong className="font-semibold text-gray-900">API endpoints.</strong> If your component has any API endpoints, the 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -80,7 +74,18 @@ export default function FetchRequest() {
             </div>
           </div>
         </div>
-
+                <div
+          className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
+          aria-hidden='true'
+        >
+          <div
+            className='relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#A6D9EF] to-[#4DA5CB] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]'
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+          />
+        </div>
       </div>
 
     </div>
