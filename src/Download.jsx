@@ -1,10 +1,13 @@
-import { ArrowDownTrayIcon } from '@heroicons/react/20/solid';
+import { ArrowDownTrayIcon, InformationCircleIcon } from '@heroicons/react/20/solid';
 import appleLogo from './assets/download-logos/apple.png';
 import windowsLogo from './assets/download-logos/windows.png';
+import { Popover, initTE } from "tw-elements";
+initTE({ Popover });
+
 export default function Download() {
   return (
     <div className='relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0'>
-             <div
+<div
           className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'
           aria-hidden='true'
         >
@@ -20,11 +23,14 @@ export default function Download() {
         <div className='col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 justify-self-center'>
           <div className="justify-self-center">
           <p className='text-base font-semibold leading-7 text-indigo-600'>
-            Deploy faster
+            Download
           </p>
-          <h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-            Download React Relay
+          <h1 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl inline'>
+            React Relay
           </h1>
+          <InformationCircleIcon className='col-start-1 mt-1 h-6 w-6 flex-none text-indigo-600 text-center inline mr-4 -mt-10 ml-2' aria-hidden='true' />
+          <div>
+           </div>  
          </div>
         </div>
         <div className='lg:row-start-2 lg:col-start-1 ml-[15rem]'>
@@ -72,7 +78,7 @@ export default function Download() {
             </button>
           </div>
         </div>
-                        <div
+        <div
           className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
           aria-hidden='true'
         >

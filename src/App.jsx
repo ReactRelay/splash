@@ -4,24 +4,21 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import blackLogo from './assets/ReactRelay-logos/black-logo-only.png';
 import Team from './Team.jsx';
 import ComponentTree from './ComponentTree.jsx';
-import FetchRequest from './FetchRequest';
+import ComponentDetails from './ComponentDetails'
 import Download from './Download';
-import CodePreview from './CodePreview';
 
 const navigation = [
   { name: 'Home', href: '#' },
   // { name: 'Documentation', href: '#' },
+  { name: 'Features', href: '#features'},
+  { name: 'Download', href: '#download-section'},
   { name: 'About Us', href: '#team' },
 ];
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const targetRef = useRef(null);
-  const scrollToTarget = () => {
-    if (targetRef.current) {
-      targetRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  
   return (
     <div className='bg-white '>
       <header className='absolute inset-x-0 top-0 z-50'>
@@ -63,7 +60,7 @@ export default function Example() {
           </div>
           <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
             <a
-              href='#'
+              href='https://www.linkedin.com/company/react-relay'
               className='text-sm font-semibold leading-6 text-gray-900'
             >
               Contact Us <span aria-hidden='true'>&rarr;</span>
@@ -151,11 +148,11 @@ export default function Example() {
                     )
                   }
                 />
-                Read more <span aria-hidden='true'>&rarr;</span>
+                GitHub<span aria-hidden='true'>&rarr;</span>
               </a>
             </div>
           </div>
-          <div className='text-center'>
+          <div className='text-center -z-10'>
             <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
               Introducing ReactRelay
             </h1>
@@ -167,20 +164,13 @@ export default function Example() {
             </p>
             <div className='mt-10 flex items-center justify-center gap-x-6'>
               <a
-                href='#'
-                onClick={() =>
-                  window.open(
-                    'https://github.com/oslabs-beta/ReactRelay',
-                    '_blank'
-                  )
-                }
+                href='#download-section'
                 className='rounded-md bg-[#4DA5CB] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600'
               >
                 Get started
               </a>
               <a
-                onClick={scrollToTarget}
-                href='#'
+                href='https://medium.com/reactrelay/reactrelay-understand-your-react-project-at-a-glance-f19d138c39f9'
                 className='text-sm font-semibold leading-6 text-gray-900'
               >
                 Learn more <span aria-hidden='true'>→</span>
@@ -203,10 +193,9 @@ export default function Example() {
       </div>
       <div ref={targetRef}>
         <ComponentTree />
-        <FetchRequest />
-        <CodePreview />
+        <ComponentDetails/>
       </div>
-      <div>
+      <div id='download-section'>
         <Download />
       </div>
       <div id='team'>
