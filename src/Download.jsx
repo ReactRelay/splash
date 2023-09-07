@@ -5,6 +5,7 @@ import {
 import appleLogo from './assets/download-logos/apple.png';
 import windowsLogo from './assets/download-logos/windows.png';
 import { useState } from 'react';
+import macZip from './assets/zip-downloads/react-relay-darwin-x64-1.0.0.zip'
 
 export default function Download() {
   const [open, setOpen] = useState(false);
@@ -62,6 +63,7 @@ export default function Download() {
         <div className='lg:row-start-2 lg:col-start-1 mr-[6rem] justify-self-end'>
           <img className='p-[12.5px] w-[175px]' src={appleLogo} />
           <div className='flex flex-col items-center gap-3 mt-5'>
+             <a href={macZip} download>
             <button className='grid grid-cols-3 download-button'>
               <ArrowDownTrayIcon
                 className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
@@ -69,6 +71,7 @@ export default function Download() {
               />
               <div className='cols-start-2 cols-span-2'>Intel</div>
             </button>
+             </a>          
             <button className='grid grid-cols-3 download-button'>
               <ArrowDownTrayIcon
                 className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
