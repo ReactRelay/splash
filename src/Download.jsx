@@ -93,22 +93,6 @@ export default function Download() {
               <div className='cols-start-2 cols-span-2'>Windows</div>
             </button>
             </a>
-            <a href='https://github.com/oslabs-beta/ReactRelay/releases/download/v1.0.0/react-relay-1.0.0.Squirrel.Setup.zip'>
-            <button className='grid grid-cols-3 download-button'>
-              <ArrowDownTrayIcon
-                className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
-                aria-hidden='true'
-              />
-              <div className='cols-start-2 cols-span-2'>Test</div>
-            </button>
-            </a>
-            {/* <button className='grid grid-cols-3 download-button'>
-              <ArrowDownTrayIcon
-                className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
-                aria-hidden='true'
-              />
-              <div className='cols-start-2 cols-span-2'>Arm64</div>
-            </button> */}
           </div>
         </div>
         <div

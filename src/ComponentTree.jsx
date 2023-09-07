@@ -21,7 +21,7 @@ export default function ComponentTree() {
             <div className="lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Component Tree</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                Choose the folder path that contains your component files and let React Relay create a tree of parvisualization of your applications architecture.
+                Choose the folder path that contains your component files and let ReactRelay create a tree of parvisualization of your applications architecture.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function ComponentTree() {
 
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
               <p className="mt-6">
-                Just leave the server path empty when uploading your codebase and React Relay will still render your application architecture for you!
+                Just leave the server path empty when uploading your codebase and ReactRelay will still render your application architecture for you!
               </p>
             </div>
           </div>
