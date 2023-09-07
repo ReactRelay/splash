@@ -13,26 +13,28 @@ const people = [
     profImage: ireneImage,
   },
   {
-    name: 'Alisa Jin',
-    linkedIn: 'https://www.linkedin.com/in/alisajin/',
-    gitHub: '',
-    profImage: alisaImage
-  },  {
-    name: 'Nicholas Cushman',
-    linkedIn: 'https://www.linkedin.com/in/nicholas-cushman/',
-    gitHub: 'https://github.com/gizmo572',
-    profImage: nickImage
-  },  {
     name: 'Kody Montes',
     linkedIn: 'https://www.linkedin.com/in/kody-montes/',
     gitHub: 'https://github.com/KodyMontes',
     profImage: kodyImage
-  }
+  },
+ {
+    name: 'Nicholas Cushman',
+    linkedIn: 'https://www.linkedin.com/in/nicholas-cushman/',
+    gitHub: 'https://github.com/gizmo572',
+    profImage: nickImage
+  },  
+    {
+    name: 'Alisa Jin',
+    linkedIn: 'https://www.linkedin.com/in/alisajin/',
+    gitHub: '',
+    profImage: alisaImage
+  }, 
 ]
 
 export default function Team() {
   return (
-    <div className="bg-white py-24 sm:py-32 mt-[10rem]">
+    <div className="bg-white py-24 sm:py-32 mt-[5rem]">
       <div className="mx-auto grid max-w-7xl gap-x-10 gap-y-20 px-6 lg:px-8 xl:grid-cols-3 justify-items-center">
         <div className="max-w-2xl">
           <h2 className="text-[3rem] font-bold text-gray-900 tracking-wider sm:text-[3rem]">Meet<br/>the<br/>Engineers</h2>
