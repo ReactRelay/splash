@@ -69,42 +69,46 @@ export default function Download() {
                 className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
                 aria-hidden='true'
               />
-              <div className='cols-start-2 cols-span-2'>Intel</div>
+              <div className='cols-start-2 cols-span-2'>Apple</div>
             </button>
              </a>          
-            <button className='grid grid-cols-3 download-button'>
+            {/* <button className='grid grid-cols-3 download-button'>
               <ArrowDownTrayIcon
                 className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
                 aria-hidden='true'
               />
               <div className='cols-start-2 cols-span-2'>M1</div>
-            </button>
+            </button> */}
           </div>
         </div>
         <div className='lg:row-start-2 lg:col-start-2 ml-[6rem] justify-self-start'>
           <img className='w-[175px]' src={windowsLogo} />
           <div className='flex flex-col items-center gap-3 mt-5'>
+           <a href='https://github.com/oslabs-beta/ReactRelay/releases/download/v1.0.0/react-relay-win32-x64.zip'>
             <button className='grid grid-cols-3 download-button'>
               <ArrowDownTrayIcon
                 className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
                 aria-hidden='true'
               />
-              <div className='cols-start-2 cols-span-2'>x64</div>
+              <div className='cols-start-2 cols-span-2'>Windows</div>
             </button>
+            </a>
+            <a href='https://github.com/oslabs-beta/ReactRelay/releases/download/v1.0.0/react-relay-1.0.0.Squirrel.Setup.zip'>
             <button className='grid grid-cols-3 download-button'>
               <ArrowDownTrayIcon
                 className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
                 aria-hidden='true'
               />
-              <div className='cols-start-2 cols-span-2'>x86</div>
+              <div className='cols-start-2 cols-span-2'>Test</div>
             </button>
-            <button className='grid grid-cols-3 download-button'>
+            </a>
+            {/* <button className='grid grid-cols-3 download-button'>
               <ArrowDownTrayIcon
                 className='col-start-1 mt-1 h-6 w-6 flex-none text-white text-center inline mr-4 mt-[-1px]'
                 aria-hidden='true'
               />
               <div className='cols-start-2 cols-span-2'>Arm64</div>
-            </button>
+            </button> */}
           </div>
         </div>
         <div
