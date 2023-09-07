@@ -39,11 +39,12 @@ export default function Download() {
           onMouseLeave={() => openInfo(false)}
         />
         {open && (
-          <div className='inline absolute bg-indigo-600 w-[350px] h-[170px] p-5 rounded-r-lg rounded-tl-lg text-center text-white mt-[-160px]'>
+          <div className='inline absolute bg-indigo-600 w-[350px] h-[190px] p-5 rounded-r-lg rounded-tl-lg text-center text-white mt-[-180px]'>
             <span className='font-bold text-[20px]'>MAC USERS</span>
             <br />
-            After downloading, add React Relay as <br />
-            a trusted developer by navigating to <br />
+            If React Relay cannot be opened<br/>
+            because the developer cannot be verified<br/>
+            press 'Cancel' and navigate to<br/>
             System Preferences &#62;&#62; Security & Privacy <br />
             and click 'Open Anyways'
           </div>
