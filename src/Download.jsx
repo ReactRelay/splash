@@ -39,13 +39,13 @@ export default function Download() {
           onMouseLeave={() => openInfo(false)}
         />
         {open && (
-          <div className='inline absolute bg-indigo-600 w-[350px] h-[150px] p-5 rounded-r-lg rounded-tl-lg text-center text-white mt-[-150px]'>
+          <div className='inline absolute bg-indigo-600 w-[350px] h-[170px] p-5 rounded-r-lg rounded-tl-lg text-center text-white mt-[-160px]'>
             <span className='font-bold text-[20px]'>MAC USERS</span>
             <br />
             After downloading, add React Relay as <br />
-            a trusted developer by navigating to
-            <br />
+            a trusted developer by navigating to <br />
             System Preferences &#62;&#62; Security & Privacy <br />
+            and click 'Open Anyways'
           </div>
         )}
         </div>
